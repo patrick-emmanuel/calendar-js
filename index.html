@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/calendar.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Add an appointment to the current or future date</h1>
+      <p>Note: You cannot add to previous dates</p>
+    </header>
+    <section class="calendar-body">
+      <div>
+        <h1 class="current-month"></h1>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thur</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+          </tr>
+        </thead>
+      </table>
+      <div class="backdrop">
+        <div>
+          <div class="alert">
+            <p></p>
+          </div>
+          <form>
+            <input type="hidden" name="selectedDate" class="selectedDate" />
+            <div class="form-input">
+              <label for="appointment-text">Add Appointment</label>
+              <textarea
+                type="text"
+                name="appointment-text"
+                class="appointment-text"
+                cols="30"
+                rows="10"
+                value=""
+              ></textarea>
+            </div>
+            <div class="button-wrapper">
+              <button class="btn">
+                Save
+              </button>
+              <a href="#" class="btn cancel-button">
+                Cancel
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="js/calendar.js"></script>
+  </body>
+</html>

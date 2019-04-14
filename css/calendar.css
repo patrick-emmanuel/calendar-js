@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-weight: 300;
+  margin: 0;
+  margin-top: 20px;
+}
+h2 {
+  font-weight: 300;
+}
+html {
+  font-family: "Ubuntu";
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.calendar-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+label {
+  font-size: 1.5rem;
+  padding: 10px 0;
+  color: #ffffff;
+}
+.appointment-text {
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 1px 30px -5px #000000;
+}
+.current-month{
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+button {
+  margin-right: 16px;
+  background: #468046;
+  color: white;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+td {
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 20px;
+  height: 70px;
+  position: relative;
+}
+td:hover {
+  background: #cfcbcb;
+}
+.btn {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px 50px;
+  text-transform: capitalize;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.cancel-button {
+  display: block;
+  background: #dc3e3e;
+  color: white;
+  text-decoration: none;
+}
+.current-day {
+  background: #dc3e3e;
+}
+
+.event-day {
+  background: #468046;
+}
+
+.event-day:hover {
+  background: #468046;
+}
+
+.backdrop {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.alert {
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  display: none;
+  font-size: 1rem;
+}
+.alert-warning {
+  background: rgb(255, 115, 0);
+}
+.alert-error {
+  background: #dc3e3e;
+}
+.delete-appointment {
+  color: white;
+  position: absolute;
+  top: 8px;
+  right: 13px;
+}
